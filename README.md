@@ -7,6 +7,7 @@ Status: WIP
 
 1. Create new Codespaces instance
 2. Run `ddev npm ddev`
+3. (?) Add port 5173 manually in Codespaces, set it to public
 
 -> We need to get a connection to the vite port and /src/js/app.js file
 ## How was this created?
