@@ -6,8 +6,8 @@ Status: WIP
 ## Try
 
 1. Create new Codespaces instance
-2. Run `ddev npm ddev`
-3. (?) Add port 5173 manually in Codespaces, set it to public
+2. Run `ddev npm run dev`
+3. (?) Set port 5173 manually to public + change it to HTTPS (?)
 
 -> We need to get a connection to the vite port and /src/js/app.js file
 ## How was this created?
@@ -22,6 +22,10 @@ ddev npm i -D vite
 ddev restart
 
 # added scripts section to package.json
-
 # added .devcontainer files
+# added vite.config.js 
 ```
+
+## Resources
+
+- https://github.com/vitejs/vite/pull/677
