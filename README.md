@@ -5,8 +5,17 @@ Simple test repo for exploring vite support
 
 1. Create new Codespaces instance
 1. Create port 5173 manually in ports tab, set it to public + change it to HTTPS (?)
-1. Run `ddev launch` to open site in browser
-1. Run `ddev npm run dev`, reload browser
+1. Run this if `.env` was not created automatically:
+
+```bash
+ddev npm install && ddev composer install && \
+echo "CODESPACES=true" >> .env && \
+echo "CODESPACE_NAME=\"${CODESPACE_NAME}\"" >> .env && \
+echo "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=\"${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}\"" >> .env 
+```
+
+4. Run `ddev launch` to open site in browser
+5. Run `ddev npm run dev`, reload browser
 
 ## Status
 
