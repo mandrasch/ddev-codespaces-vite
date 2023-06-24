@@ -15,12 +15,13 @@ ddev start -y
 # ddev exec 'sed -i "/PRIMARY_SITE_URL=/c APP_URL=$DDEV_PRIMARY_URL" .env'
 # add other env vars for codespaces, needed for vite
 # (find better solution for this?)
-# echo "CODESPACES=true" >> .env
-# echo "CODESPACE_NAME=\"${CODESPACE_NAME}\"" >> .env
-# echo "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=\"${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}\"" >> .env
+echo "CODESPACES=true" >> .env
+echo "CODESPACE_NAME=\"${CODESPACE_NAME}\"" >> .env
+echo "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=\"${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}\"" >> .env
 
-# ddev composer install
+# install dependencies
 ddev npm install
+ddev composer install
 
 # other steps would be possible, e.g. for craftcms:
 # ddev craft install/craft --interactive=0 --username=admin --password=NewPassword --email=admin@example.com --site-name=Testsite
