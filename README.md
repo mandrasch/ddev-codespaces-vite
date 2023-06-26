@@ -13,10 +13,12 @@ After creation, `.devcontainer/postCreateCommand.sh` runs (takes some time). You
 
 ## Status
 
-- Status: WIP, currently not working
-- `npm run dev` works, `ddev npm run dev` not (port 5173 is bound to DDEV web)
+- Status: WIP, vite hot reloading not working + local usage broken because of blocked port
+  
+## TODOs
 
--> We need to get a connection to the vite port and /src/js/app.js file
+- [ ] vite works, but not hot reload
+- [ ] Port is blocked on local usage, migrate expose_ports from config.yaml to docker-compose file; try https://github.com/vitejs/vite/pull/677#issuecomment-1473740472
 
 ## Troubleshooting
 
