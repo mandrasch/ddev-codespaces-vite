@@ -1,5 +1,11 @@
+📣 **Update: See https://github.com/mandrasch/ddev-craftcms-vite for working implementation** 📣
+
+
+<hr>
+
+
 # ddev-codespaces-vite
-Simple test repo for exploring vite support
+🚧Simple test repo for exploring vite support, not working yet 🚧
 
 ## Try
 
